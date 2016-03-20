@@ -1,0 +1,96 @@
+body>header {
+	margin-bottom: 60px;
+}
+.login-button, .register-button {
+	background-color:  #ac0707;
+	color: #fff;
+	border: none;
+	font-size: 1.4rem;
+	font-weight: lighter;
+	width: 94px;
+	height: 29px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+ .register-button {
+	margin-top: 40px;
+ }
+.account-login {
+	font-weight: lighter;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	width: 75%;
+}
+.account-login form {
+	width: 48%;
+}
+.account-login h3  {
+	font-size: 3.2rem;
+	font-weight: lighter;
+	width: 100%;
+	margin-bottom: 45px;
+}
+.account-login h5  {
+	font-size: 2.4rem;
+	font-weight: lighter;
+}
+.account-login p,  .account-login label {
+	color: #a8a8a8;
+	font-size: 1.4rem;
+	display: block;
+	margin-top: 12px;
+}
+.account-login input  {
+	width: 200px;
+	height: 30px;
+	margin-top: 5px;
+}
+.buy-now {
+	background-color:  #ac0707;
+	color: #fff;
+	border: none;
+	font-size: 1.6rem;
+	width: 94px;
+	height: 29px;
+	cursor: pointer;
+}
+
+/*---responsive---*/
+
+@media only screen and (max-width: 1299px) {
+	.account-login {
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		width: 50%;
+		margin-left: 5%;
+	}
+	.account-login form {
+		width: 70%;
+	}
+	.featured-products {
+		margin-right: 5%;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	.account-login {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.account-login h3,
+	.account-login form {
+		width: 90%;
+		margin: 20px auto;
+		text-align: center;
+	}
+	.account-login form p {
+		width: 70%;
+		margin: 25px auto;
+	}
+	.featured-products {
+		margin: 45px auto;
+	}
+}

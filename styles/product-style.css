@@ -1,0 +1,239 @@
+body>header {
+	margin-bottom: 40px;
+}
+.details iframe {
+	display: inline-block;
+    overflow: hidden;
+	margin-right: 10px;
+	overflow:hidden; 
+	border: none;
+}
+.details ul {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+}
+.details ul li {
+	text-decoration: none;
+	width: 77px;
+	height: 103px;
+	background-image: url("../images/leather-jacket-small.jpg");
+	margin-bottom: 10px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition:opacity 0.15s linear;
+}
+.details ul li:hover {
+	opacity:1;
+}
+.details ul li a {
+	text-decoration: none;
+}
+.details .info {
+	width: 375px;
+	display: inline-block;
+	margin: 0 25px;
+	vertical-align: top;
+}
+.details .info header h2 {
+	font-weight: lighter;
+	font-size: 2.7rem;
+	margin-top: 7px;
+}
+.details .info header h5 {
+	font-weight: lighter;
+	font-size: 1.4rem;
+	color: #ccc;
+	margin: 7px 0;	
+}
+.info {
+font-size: 0;
+}
+#red {
+	width: 87px;
+	height: 31px;
+	background-color: #ac0707;
+	display: inline-block;
+	margin-top: 17px;
+}
+#gray {
+	width: 174px;
+	height: 31px;
+	background-color: #000;
+	opacity: 0.5;
+	display: inline-block;
+}
+#black {
+	width: 371px;
+	height: 181px;
+	background-color: #000;
+	display: block;
+}
+.details .info button {
+	background: none;
+	border: none;
+	position: relative;
+	font-weight: lighter;
+	font-size: 2.4rem;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 35px;
+}
+#shopping-cart-add-big {
+	background-image: url("../images/shopping-cart-add-big.png");
+	width: 53px;
+	height: 53px;
+	margin-right: 10px;
+}
+#add-to-cart {
+	bottom: 15px;
+	margin-right: 44px;
+}
+#favorite {
+	background-image: url("../images/favorite.png");
+	width: 42px;
+	height: 42px;
+	margin-right: 10px;
+}
+#store {
+	background-image: url("../images/store.png");
+	width: 42px;
+	height: 42px;
+}
+.details .info button:focus {
+	outline: none;
+	border: none;
+}
+.fb-like.fb_iframe_widget {
+	position: relative;
+	top: 40px;
+}
+.fb-like.fb_iframe_widget span, .fb-like.fb_iframe_widget span iframe {
+	width: 450px !important;
+	height: 28px !important;
+}
+.gallery-nav {
+	width: 1270px;
+	height: 115px;
+	background: #080808;
+}
+@media all and (-ms-high-contrast:none) {
+     .gallery-nav { margin-top: 90px } /* IE10 */
+     *::-ms-backdrop, .gallery-nav { margin-top: 90px } /* IE11 */
+}
+.gallery-nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row nowrap;
+}
+.gallery-nav ul li {
+	text-decoration: none;
+	display: inline-block;
+	background-image: url("../images/jacket-sprites.jpg");
+	height: 97px;
+	width: 98px;
+	margin: 0 1px;
+	cursor: pointer;
+	transition:opacity 0.15s linear;
+}
+.gallery-nav ul li:hover {
+	opacity:0.5;
+}
+.gallery-nav ul li:first-child, .gallery-nav ul li:last-child {
+	background-image: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	vertical-align: top;
+	width: 35px;
+}
+.gallery-nav ul li:nth-child(3) {
+	background-position: 1078px 0;
+}
+.gallery-nav ul li:nth-child(4) {
+	background-position: 980px 0;
+}
+.gallery-nav ul li:nth-child(5) {
+	background-position: 882px 0;
+}
+.gallery-nav ul li:nth-child(6) {
+	background-position: 784px 0;
+}
+.gallery-nav ul li:nth-child(7) {
+	background-position: 686px 0;
+}
+.gallery-nav ul li:nth-child(8) {
+	background-position: 588px 0;
+}
+.gallery-nav ul li:nth-child(9) {
+	background-position: 490px 0;
+}
+.gallery-nav ul li:nth-child(10) {
+	background-position: 392px 0;
+}
+.gallery-nav ul li:nth-child(11) {
+	background-position: 294px 0;
+}
+.gallery-nav ul li:nth-child(12) {
+	background-position:196px 0;
+}
+.gallery-nav ul li:nth-child(13) {
+	background-position:98px 0;
+}
+.gallery-nav ul li a {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1299px) {
+	main {
+		justify-content: center;
+	}
+	.featured-products {
+		display: none;
+	}
+	.details {
+		width: 90%;
+	}
+	.gallery-nav {
+		width: 90%;
+		height: 100%;
+	}
+	.gallery-nav ul {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.details {
+		margin-bottom: 70px;
+		text-align: center;
+	}
+	.details ul,
+	.details .info {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.details iframe {
+		margin-bottom: 10px;
+	}
+	.details ul li {
+		display: inline-block;
+	}
+	.gallery-nav ul li {
+		margin: 2px;
+	}
+	.info #black {
+		margin: 0 auto;
+	}
+	.fb-like.fb_iframe_widget {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 495px) {
+	.details iframe {
+		max-width: 100%;
+   		height: auto;
+	}
+}

@@ -1,0 +1,165 @@
+main {
+	margin-top: 42px;
+	display: block;
+}
+main aside {
+	width: 20%;	
+	height: 610px;
+	background-color: #080808;
+	float: left;
+}
+main aside h3 {
+	font-size: 2.2rem;
+	font-weight: lighter;
+	margin: 17px 0 28px 17px;
+}
+main aside ul {
+	list-style-type: none;
+}
+main aside ul li {
+	text-decoration: none;
+	height: 32px;
+}
+main aside ul li a {
+	font-size: 1.5rem;
+	font-weight: lighter;
+	color: #b2b2b2;
+	text-decoration: none;
+	display: block;
+	padding: 0 17px;
+	height: 100%;
+	position: relative;
+	top: 4px;
+}
+main aside ul li:hover {
+	background-color: #ac0707;
+}
+main aside ul li a:hover {
+	color: #fff;
+	font-weight: normal;
+}
+main section {
+	width: 72%;
+	margin: 15px 45px;
+	padding-right: 20px;
+	float: right;
+}
+main section header {
+	width: 100%;
+	line-height: 1;
+	margin-bottom: 55px;
+}
+main section header h2 {
+	display: inline-block;
+	font-size: 3.2rem;
+	font-weight: lighter;
+	float: left;
+}
+main section header input {
+	width: 250px;
+	height: 32px;
+	background-color: #080808;
+	color: #b2b2b2;
+	outline: none;
+	border: none;
+	float: right;
+	font-size: 1.4rem;
+	padding: 0 8px;
+}
+main section article {
+	margin-bottom: 60px;
+	margin-right: 0;
+	display: inline-block;
+	float: left;
+}
+.left, .center {
+	width: 36%;
+}
+.right {
+	width: 25%;
+}
+footer {
+	clear: both;
+}
+
+/*---responsive---*/
+
+@media only screen and (max-width: 1199px) {
+	main section {
+		width: 65%;
+	}
+	.left,
+	.center,
+	.right {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	main section {
+		margin: 15px;
+		width: 73%;
+	}
+	main section article figure figcaption,
+	main section article figure p {
+		width: 50px;
+		position: relative;
+		right: 10px;
+	}
+	main section article figure button {
+		top: 20px;
+		right: 10px;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	main aside {
+		width: 25%;
+		min-width: 135px;
+	}
+	main section {
+		width: 60%;
+	}
+	main section header input {
+		float: left;
+		margin: 25px 0;
+		display: block;
+		width: 65%;
+	}
+	.left,
+	.center,
+	.right {
+		width: 100%;
+	}
+	main section article figure figcaption,
+	main section article figure p {
+		width: 100px;
+		left: 30px;
+	}
+	main section article figure button {
+		top: 60px;
+		left: 30px;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	main section article figure figcaption,
+	main section article figure p {
+		left: 10px;
+	}
+	main section article figure button {
+		left: 10px;
+	}
+}
+
+@media only screen and (max-width: 435px) {
+	main aside {
+		width: 100%;
+		height: 100%;
+	}
+	main section {
+		width: 90%;
+		margin: 20px auto;
+	}
+}
+
